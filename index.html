@@ -1,0 +1,110 @@
+"index.html"
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio [Nama Kamu]</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Portofolio</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#experience">Prestasi</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <img src="assets/img/profile.jpg" alt="Foto Profil" class="profile-pic">
+    <h2>Halo, Saya [Nama Kamu]</h2>
+    <p>Frontend Web Developer / Siswa SMA</p>
+    <button class="cta" onclick="scrollToSection('projects')">Lihat Portofolio</button>
+    <button class="cta" onclick="scrollToSection('contact')">Hubungi Saya</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h3>Tentang Saya</h3>
+    <p>Saya adalah pelajar SMA kelas 11 dari Pare, Jawa Timur. Saya memiliki minat besar pada web development dan desain. Tujuan saya adalah melanjutkan studi ke jurusan Teknik Informatika dan berkarier sebagai developer profesional.</p>
+    <div class="skills">
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">Responsive Design</span>
+      <span class="skill">UI/UX Basics</span>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h3>Proyek</h3>
+    <div class="project-grid">
+      <div class="project-card">
+        <h4>Dictionary App</h4>
+        <p>Aplikasi kamus bilingual sederhana dengan fitur pencarian kata.</p>
+        <p><strong>Peran:</strong> Frontend Developer</p>
+        <p><strong>Teknologi:</strong> HTML, CSS, JS</p>
+        <a href="#" class="btn">Demo</a>
+      </div>
+      <div class="project-card">
+        <h4>Grammar Checker</h4>
+        <p>Web app untuk memeriksa grammar bahasa Inggris.</p>
+        <p><strong>Peran:</strong> Developer</p>
+        <p><strong>Teknologi:</strong> HTML, CSS, JS</p>
+        <a href="#" class="btn">Repo</a>
+      </div>
+      <div class="project-card">
+        <h4>Portfolio Website</h4>
+        <p>Website portofolio pribadi dengan desain responsif.</p>
+        <p><strong>Peran:</strong> Designer & Developer</p>
+        <p><strong>Teknologi:</strong> HTML, CSS, JS</p>
+        <a href="#" class="btn">Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <h3>Prestasi & Pengalaman</h3>
+    <ul class="timeline">
+      <li><span>2024</span> Juara 2 Lomba Web Design Tingkat Kabupaten</li>
+      <li><span>2025</span> Anggota Organisasi IT Club SMA</li>
+      <li><span>2025</span> Sertifikat “Introduction to Web Development” dari Coursera</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h3>Kontak</h3>
+    <form id="contactForm">
+      <input type="text" placeholder="Nama" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Pesan" required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+    <div id="formOutput"></div>
+    <div class="social-links">
+      <a href="#">LinkedIn</a> | 
+      <a href="#">GitHub</a> | 
+      <a href="#">Instagram</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Portofolio [Nama Kamu]</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
